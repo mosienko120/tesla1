@@ -1,0 +1,266 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header starts */
+
+.container{
+    width: 1337px;
+    margin: 0 auto;
+}
+
+.header{
+    margin-bottom: 60px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.menu_nav{
+    margin-left: 35px;
+}
+
+.menu_logo{
+    margin-top: 24px;
+}
+
+.menu_nav_list{
+    display: flex;
+    width: 490px;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.menu_nav_list li a{
+    text-decoration: none;
+    color: #000000;
+    transition: color .2s ease-in;
+    padding-bottom: 10px;
+}
+
+.menu_nav_list li a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color:#E51937;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.menu_nav_list li a:hover{
+  color:#E51937;
+}
+
+.menu_nav_list li a:hover::after{
+    width: 100%;
+    transition: .2s width linear;
+}
+
+.menu_tools{
+    display: flex;
+    width: 203px;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.menu_tools_link{
+    text-decoration: none;
+    color: #000000;
+    transition: color .2s ease-in;
+    padding-bottom: 10px;
+}
+
+.menu_tools_link::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 4px;
+    background-color:#E51937;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.menu_tools_link:hover{
+    color:#E51937;
+}
+
+.menu_tools_link:hover::after{
+    width: 100%;
+    transition: .2s width linear;
+}
+
+.menu_tools_list{
+    display: flex;
+}
+
+/* Header ends */
+
+/* Hero starts */
+
+.hero{
+    height: 600px;
+}
+
+.hero_title{
+    font-size: 90px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.hero_subtitle{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 9px;
+}
+
+.hero_main{
+    max-height: 300px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 33px;
+    background-image: url(../img/hero_background.png);
+    background-repeat: no-repeat;
+
+}
+
+.hero_image{
+    max-width: 948px;
+    margin: 0 auto;
+}
+
+.hero_img{
+    transition: all 1s cubic-bezier(0.45, 0.07, 0.11, 0.96);
+}
+
+.hero_img:hover{
+    transform: translateX(-40px);
+}
+
+.hero_inner{
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.hero_specs{
+    display: flex;
+    width: 375px;
+    justify-content: space-between;
+}
+
+.hero_speed_title,
+.hero_road_title{
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.hero_speed_subtitle,
+.hero_road_subtitle{
+    font-size: 12px;
+}
+
+.hero_speed_title::after{
+    content: "сек";
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 6px;
+}
+
+.hero_road_title::after{
+    content: "км";
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 6px;
+}
+
+.hero_specs_road,
+.hero_specs_speed{
+    display: flex;
+}
+
+.hero_text_inner{
+    margin-left: 12px;
+}
+
+.hero_img_inner_first img{
+    transform: translateY(8px);
+}
+
+.hero_buttons_inner{
+    width: 318px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero_test_drive a{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+.hero_test_drive{
+    position: relative;
+    margin-top: -5px;
+}
+
+.hero_buttons{
+    margin-top: 20px;
+}
+
+.hero_order a{
+    color: #E51937;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid #E51937;
+    padding: 12px 41px;
+    font-size: 13px;
+    font-weight: 700;
+    transition: color .2s ease-in;
+    transition: background-color .3s linear;
+}
+
+.hero_test_wrapper{
+    display: inline-block;
+}
+
+.hero_text_wrapper{
+    display: inline-block;
+    position: absolute;
+    width: 90px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 7px;
+}
+
+.hero_order a:hover{
+    color: #fff;
+    background-color: #E51937;
+}
+
+.hero_scroller{
+    display: flex;
+    justify-content: center;
+}
+
+.hero_scroller a{
+    padding: 40px;
+    transition: transform .5s cubic-bezier(0.45, 0.07, 0.11, 0.96);
+}
+
+.hero_scroller a:hover{
+    transform: translateY(10px);
+}
